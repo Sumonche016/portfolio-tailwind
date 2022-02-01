@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg_black: '#101010',
+                        red: '#F9004D',
+                        heading: '#F0F0F0'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-bg_black">
+    <header class=" py-2">
+        <div class="w-11/12 md:w-[85%] lg:w-[85%] xl:w-[85%]  mx-auto my-0">
+            <nav class="flex justify-between items-center none">
+                <div class="flex items-center">
+                    <img src="./image/logo-symbol-dark.png" alt="">
+                    <span class="text-4xl text-white ml-2 font-medium">SUMON</span>
+                </div>
+                <div class="hidden md:block">
+                    <ul class="flex items-center gap-5 text-white text-xl font-medium" ">
+                    <li>
+                        <a href=" " class=">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="">Skill</a>
+                        </li>
+                        <li>
+                            <a href="">Contact Me</a>
+                        </li>
+                        <button class="font-medium border-2 border-red rounded px-5 py-2 hover:bg-red transition-all duration-500 shadow-md "><a href="">Resume</a></button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="min-h-screen">
+        <div class="flex flex-col md:flex-row lg:flex-row  xl:flex-row justify-between md:items-center lg:items-center xl:items-center  min-h-screen w-11/12 md:w-[85%] lg:w-[85%] xl:w-[85%]   mx-auto my-0 pt-10">
+            <div class="text-white md:w-1/2 lg:w-1/2 xl:w-1/2 md:pb-44">
+                <p class="text-xl font-medium text-heading">Hello I am,</p>
+                <h1 class="text-6xl text-heading font-bold my-5">Dev_Sumon</h1>
+                <p class="text-2xl text-red font-medium mb-3">Front End Developer</p>
+                <button class=" mt-7 font-medium border-2 border-red rounded px-8 py-3 hover:bg-red transition-all duration-500 shadow-md "><a href=" " class="text-xl">Get Resume</a></button>
+            </div>
+            <div class="md:w-1/2 lg:w-1/2 xl:w-1/2 ">
+                <img src="./image/icon5.svg " alt=" " class="w-full mt-20 md:m-0 inline-block hover:scale-[.9] transition-all duration-1000">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="min-h-screen">
+        <div class="flex flex-col lg:flex-row  xl:flex-row justify-between md:items-center lg:items-center xl:items-center  min-h-screen w-11/12 md:w-[85%] lg:w-[85%] xl:w-[85%]   mx-auto my-0 pt-10">
+            <div class="md:w-full lg:w-1/2 xl:w-1/2">
+                <img src="./image/20210502_15).jpeg" alt=" " class="w-[550px] h-[600px] mt-20 md:m-0 inline-block backdrop-grayscale">
+            </div>
+            <div class="text-white md:w-full lg:w-1/2 xl:w-1/2">
+                <h1 class="text-white text-4xl font-bold mt-5">About Me</h1>
+                <p class="text-heading text-xl mt-7 leading-10">Hello! I'm Sumon Bala, a passionate Front-end developer. I develop web applications, I also have experience working with Reactjs and Node js. Able to do any web and programming related task by handling difficulties smoothly in any given
+                    time. Have a reasonable skill on Front-End and Back-End development</p>
+                <button class=" mt-7 font-medium border-2 border-red rounded px-8 py-3 hover:bg-red transition-all duration-500 shadow-md "><a href=" " class="text-xl">See Resume</a></button>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+</html>
