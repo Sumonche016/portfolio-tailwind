@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/459e15cfa2.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -14,7 +15,9 @@
                     colors: {
                         bg_black: '#101010',
                         red: '#F9004D',
-                        heading: '#F0F0F0'
+                        heading: '#F0F0F0',
+                        borderColor: 'rgba(255, 255, 255, 0.2)',
+                        icon: 'rgba(198, 201, 216, 0.75)',
                     }
                 }
             }
@@ -64,6 +67,7 @@
         </div>
     </section>
 
+    <!-- About me  -->
 
     <section class="min-h-screen pb-20">
         <div class="flex flex-col lg:flex-row  xl:flex-row justify-between md:items-center lg:items-center xl:items-center  min-h-screen w-11/12 md:w-[85%] lg:w-[85%] xl:w-[85%]   mx-auto my-0 pt-10">
@@ -247,19 +251,61 @@
     <!--  hire me section -->
 
     <section class="py-20">
-        <div class="w-[85%] mx-auto my-0">
-            <div class="grid grid-cols-2 gap-10">
-                <div>
+        <div class="w-11/12 md:w-[85%] mx-auto my-0">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-10">
+                <div class="order-last md:order-first">
                     <h1 class="text-white text-6xl font-bold">Hire Me.</h1>
-                    <p class="text-[#9F9F9F] text-lg font-medium my-5"> I am available for freelance work. Connect with me via phone: <span>01923 088574</span> or email: <span>admin@example.com</span> and <a class="text-red" target="_blank" href="https://www.fiverr.com/users/dev_laxmi">Fiverr</a></p>
+                    <p class="text-[#9F9F9F] text-lg font-medium my-5"> I am available for freelance work. Connect with me via phone:
+                        <span class="text-white">01406595410</span> or email: <span class=" text-white ">laxmiranifiverr@gmail.com</span> and <a class="text-red font-bold" target="_blank " href="https://www.fiverr.com/users/dev_laxmi ">Fiverr</a></p>
+                    <div class="mt-2">
+                        <input type="text" placeholder="Your Name*" class="text-[#9F9F9F] block w-full py-4 px-8 mb-5 bg-transparent border-borderColor border-2 focus:outline-none focus:text-white ">
+                        <input type="email" placeholder="Your Email*" class="block w-full  py-[1rem] px-[2rem] mb-5 bg-transparent border-borderColor border-2 text-[#9F9F9F] focus:outline-none focus:text-white ">
+                        <input type="text " placeholder="Write a subject " class="block w-full py-[1rem] px-[2rem] mb-5 bg-transparent border-borderColor border-2 text-[#9F9F9F] focus:outline-none focus:text-white ">
+                        <textarea class=" focus:outline-none block w-full text-[#9F9F9F]  py-[1rem] px-[2rem] bg-transparent border-borderColor border-2 focus:text-white " name="" id="" cols="50" rows="4" placeholder="Your Messege"></textarea>
+                        <button class="mt-7 font-medium border-2 border-red rounded px-12 py-3 hover:bg-red transition-all duration-500 shadow-md text-white  "><a href=" " class="text-xl">Submit</a></button>
+                    </div>
                 </div>
                 <div>
-                    <img src="./image/20210502_15).jpeg" alt=" " class="w-[550px] h-[600px] filter grayscale mt-20 md:m-0 inline-block backdrop-grayscale">
+                    <img src="./image/20210502_15).jpeg " alt=" " class="w-[550px] h-[600px] filter grayscale mt-20 md:m-0 inline-block backdrop-grayscale ">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer class="py-10 ">
+        <div class="w-11/12  mx-auto my-0">
+            <div class="grid grid-cols-3 gap-20">
+                <div class="">
+                    <div class="flex">
+                        <img src="./image/logo-symbol-dark.png" alt="">
+                        <h1 class="text-5xl ml-3 text-white">sumon</h1>
+                    </div>
+                </div>
+                <div class="">
+                    <ul class="text-white flex justify-center items-center gap-4 ">
+                        <li class="w-[60px] h-[60px] rounded-full border-2 border-icon flex justify-center items-center hover:bg-red  hover:border-none  hover:-translate-y-1 transition-all duration-500">
+                            <a class="hover:text-white" href=""><i class="fa fa-facebook text-icon "></i></a>
+                        </li>
+                        <li class="w-[60px] h-[60px] rounded-full border-2 border-icon flex justify-center items-center">
+                            <a href=""><i class="fab fa-linkedin-in text-icon" ></i></a>
+                        </li>
+                        <li class="w-[60px] h-[60px] rounded-full border-2 border-icon flex justify-center items-center">
+                            <a href=""><i class="fa fa-twitter text-icon"></i></a>
+                        </li>
+                        <li class="w-[60px] h-[60px] rounded-full border-2 border-icon flex justify-center items-center">
+                            <a href=""><i class="fa fa-skype text-icon"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" flex justify-center items-center">
+                    <p class="text-icon">Copyright © 2022 Rainbow-Themes. All Rights Reserved.</p>
                 </div>
             </div>
 
         </div>
-    </section>
+    </footer>
 
 
 </body>
