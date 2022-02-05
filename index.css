@@ -44,11 +44,29 @@
     color: #fff;
 }
 
-html {
-    scroll-behavior: smooth;
+@media (max-width:700px) {
+    .current {
+        background: transparent;
+        padding: 0;
+        color: #fff;
+    }
+    .current a {
+        color: #f9004d;
+    }
 }
 
-.navigation-icon {
+
+/* #show {
+    right: 0;
+} */
+
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+
+/* .navigation-icon {
     width: 2.5rem;
     height: 2.5px;
     background-color: #333;
@@ -66,7 +84,6 @@ html {
     background-color: #fff;
     display: inline-block;
     transition: all 0.4s;
-    top: 93px;
 }
 
 .navigation-icon::before {
@@ -77,6 +94,5 @@ html {
     background-color: #333;
     background-color: #fff;
     display: inline-block;
-    top: 68px;
     transition: all 0.4s;
-}
+} */
