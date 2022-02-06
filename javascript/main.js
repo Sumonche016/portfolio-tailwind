@@ -1,42 +1,4 @@
-// one page
-
-$(document).ready(function() {
-    $('#ripples').ripples({
-        resolution: 512,
-        dropRadius: 20,
-        perturbance: 0.04,
-
-    });
-})
-
-
-
-$('#nav').onePageNav();
-
-
-// nav 
-
-window.addEventListener('scroll', function() {
-
-    let header = document.getElementById('header');
-    let windowPosition = window.scrollY > 0;
-    header.classList.toggle('scrolling-active', windowPosition);
-
-})
-
-
-// scrollfy
-// $(function() {
-//     $.scrollify({
-//         section: ".example-classname",
-//     });
-// });
-
-
-
-//  this is for navbtn
-
-const menuList = document.querySelector('.menu-list');
+var menuList = document.querySelector('.menu-list');
 var cancel = document.querySelector('.cancel-btn');
 var menuBtn = document.querySelector('.menu-btn');
 
@@ -48,3 +10,29 @@ cancel.onclick = () => {
     menuList.classList.remove('right-0');
 
 }
+
+
+
+window.addEventListener('scroll', function() {
+
+    let header = document.getElementById('header');
+    let windowPosition = window.scrollY > 0;
+    header.classList.toggle('scrolling-active', windowPosition);
+
+})
+
+
+
+$(document).ready(function() {
+    $('.ripples').ripples({
+        resolution: 512,
+        dropRadius: 15,
+        perturbance: 0.03,
+
+    });
+})
+
+
+$('#nav').onePageNav({
+    filter: ':not(.external)'
+});
