@@ -38,3 +38,5 @@ $(document).ready(function() {
 $('#nav').onePageNav({
     filter: ':not(.external)'
 });
+
+AOS.init();
